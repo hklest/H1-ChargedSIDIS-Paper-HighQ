@@ -35,7 +35,7 @@
 \maketitle
 
 \begin{abstract}
-Cross sections for the semi-inclusive production of charged hadrons in deep-inelastic electron--proton scattering are measured at high negative four-momentum transfer squared, $150<\Qsq<20\,000~\GeVsq$, and inelasticity $0.1<y<0.7$. The data were recorded with the H1 detector at HERA at a centre-of-mass energy of $319~\GeV$ and correspond to an integrated luminosity of $351~\pbinv$. Positively and negatively charged hadrons are measured separately, without particle identification, as functions of $\Qsq$, Bjorken $x$, the hadron energy fraction $z$, and the hadron transverse momentum $\pTh$ with respect to the virtual photon in the photon--proton centre-of-mass frame, in 245 bins per charge. The measurement is corrected for detector effects by iterative Bayesian unfolding and for QED radiation from the lepton line to the Born level of single-photon exchange. Integrated over the measured phase space, the cross sections are $10.96~\nb$ for $\hplus$ and $10.65~\nb$ for $\hminus$, and the median total uncertainty is 8.1\% for $\hplus$ and 8.9\% for $\hminus$. The $\pTh$ spectra harden with increasing $z$, and the ratio of positive to negative hadron production rises with $x$ and generally with $z$: integrated over $z>0.2$, it grows from 1.02 at the lowest $x$ to 1.49 at $\Qsq>1500~\GeVsq$. The data are compared with Monte Carlo event generators and with a global fit of transverse-momentum-dependent parton distributions and fragmentation functions.
+Cross sections for the semi-inclusive production of charged hadrons in deep-inelastic electron--proton scattering are measured at high negative four-momentum transfer squared, $150<\Qsq<20\,000~\GeVsq$, and inelasticity $0.1<y<0.7$. The data were recorded with the H1 detector at HERA at a centre-of-mass energy of $319~\GeV$ and correspond to an integrated luminosity of $351~\pbinv$. Positively and negatively charged hadrons are measured separately, without particle identification, as functions of $\Qsq$, Bjorken $x$, the hadron energy fraction $z$, and the hadron transverse momentum $\pTh$ with respect to the virtual photon in the photon--proton centre-of-mass frame, in 245 bins per charge. The measurement is corrected for detector effects by iterative Bayesian unfolding and for QED radiation from the lepton line to the Born level of single-photon exchange. Integrated over the measured phase space, the cross sections are $10.96~\nb$ for $\hplus$ and $10.65~\nb$ for $\hminus$, and the median total uncertainty is 8.6\% for $\hplus$ and 9.3\% for $\hminus$. The $\pTh$ spectra harden with increasing $z$, and the ratio of positive to negative hadron production rises with $x$ and generally with $z$. Integrated over $z>0.2$, it grows from 1.02 at the lowest $x$ to 1.49 at $\Qsq>1500~\GeVsq$. The data are compared with Monte Carlo event generators and with a global fit of transverse-momentum-dependent parton distributions and fragmentation functions.
 \end{abstract}
 
 %==============================================================================
@@ -101,15 +101,15 @@ The H1 detector is described in detail in Refs.~\cite{H1:1996jzy,H1:1996cvd}. Ch
 
 \subsection{Data and simulated samples}
 
-The data were recorded from 2003 to 2007, when HERA collided electrons or positrons of $27.6~\GeV$ with protons of $920~\GeV$, at $\sqrt{s}=319~\GeV$. Four running periods are used: $e^{+}p$ collisions in 2003--2004 and 2006--2007, and $e^{-}p$ collisions in 2004--2005 and 2006. The combined sample corresponds to an integrated luminosity of $351~\pbinv$, known with an uncertainty of 2.7\%.
+The data were recorded from 2003 to 2007, when HERA collided electrons or positrons of $27.6~\GeV$ with protons of $920~\GeV$, at $\sqrt{s}=319~\GeV$. Four running periods are used, with $e^{+}p$ collisions in 2003--2004 and 2006--2007 and $e^{-}p$ collisions in 2004--2005 and 2006. The combined sample corresponds to an integrated luminosity of $351~\pbinv$, known with an uncertainty of 2.7\%.
 
 Detector effects are modelled with fully simulated samples of neutral-current DIS events generated with DJANGOH~1.4~\cite{Charchula:1994kf} and RAPGAP~3.1~\cite{Jung:1993gf}, both with $\Qsq>60~\GeVsq$ and both using the CTEQ6L parton distributions. In DJANGOH, the hard scattering is generated with LEPTO~\cite{Ingelman:1996mq} and the QCD cascade with the colour-dipole model of ARIADNE~\cite{Lonnblad:1992tz}. RAPGAP combines $\mathcal{O}(\alpha_{s})$ matrix elements with leading-logarithm parton showers. Both generators include QED radiation from the lepton line through HERACLES~\cite{Kwiatkowski:1990es}. The samples correspond to integrated luminosities of $10.5~\mathrm{fb}^{-1}$ (DJANGOH) and $9.1~\mathrm{fb}^{-1}$ (RAPGAP) and cover the four running periods. They are passed through a GEANT-based~\cite{Brun:1987ma} simulation of the H1 detector and through the same reconstruction and analysis chain as the data. The simulated events are weighted for the trigger and for the hadronic-interaction cross sections in the detector material. RAPGAP provides the nominal detector response and DJANGOH the alternative. A dedicated DJANGOH sample covers $\Qsq<60~\GeVsq$. Photoproduction is simulated with PYTHIA, and elastic $\rho^{0}$ production with DIFFVM.
 
-For the comparison with the data, two further generators are used at particle level without detector simulation: PYTHIA~8.317~\cite{Bierlich:2022pfr}, with the dipole shower (\texttt{SpaceShower:dipoleRecoil=on}) and Lund string fragmentation, and SHERPA~3.0.3~\cite{Sherpa:2024mfk}, with leading-order matrix elements, cluster hadronization, and the NNPDF3.1 LO parton distributions~\cite{Ball:2017nwa}. Both are generated without QED radiation from the lepton line, each with $10^{7}$ events, and analysed with Rivet~\cite{Bierlich:2019rhm} in the particle-level phase space of the measurement. The DJANGOH and RAPGAP predictions are taken from their non-radiative samples.
+For the comparison with the data, PYTHIA~8.317~\cite{Bierlich:2022pfr} and SHERPA~3.0.3~\cite{Sherpa:2024mfk} are used at particle level without detector simulation. PYTHIA is run with the dipole shower (\texttt{SpaceShower:\allowbreak dipoleRecoil=on}), Lund string fragmentation, and the NNPDF3.1 LO parton distributions~\cite{Ball:2017nwa}. SHERPA is run with MEPS@NLO merging of MC@NLO matrix elements with up to one extra jet, cluster hadronization, and the NNPDF3.0 NNLO parton distributions~\cite{NNPDF:2014otw}. Both are generated without QED radiation from the lepton line, each with $10^{7}$ events, and analysed with Rivet~\cite{Bierlich:2019rhm} in the particle-level phase space of the measurement. The DJANGOH and RAPGAP predictions are taken from their non-radiative samples.
 
 \subsection{Event selection}
 
-Events are triggered by the scattered lepton in the LAr calorimeter. The data are required to come from periods with all relevant detector components operational and from colliding bunches. The scattered lepton must have an energy $E_{e'}\geq11~\GeV$ and a polar angle $\theta_{e'}<2.7~\mathrm{rad}$. It must lie in well-instrumented regions of the LAr calorimeter: its impact position along the beam axis satisfies $-190<z_{\mathrm{impact}}<15~\mathrm{cm}$ or $z_{\mathrm{impact}}>25~\mathrm{cm}$, and it must avoid the cracks between calorimeter octants, $2^{\circ}<\phi_{\mathrm{octant}}<43^{\circ}$, unless $z_{\mathrm{impact}}>300~\mathrm{cm}$. A run-dependent veto removes regions with trigger efficiency below 100\%. The event vertex must lie within $35~\mathrm{cm}$ of the nominal interaction point. For leptons with $\theta_{e'}<30^{\circ}$, a vertex reconstructed from central tracks alone is also accepted.
+Events are triggered by the scattered lepton in the LAr calorimeter. The data are required to come from periods with all relevant detector components operational and from colliding bunches. The scattered lepton must have an energy $E_{e'}\geq11~\GeV$ and a polar angle $\theta_{e'}<2.7~\mathrm{rad}$. It must lie in well-instrumented regions of the LAr calorimeter. Its impact position along the beam axis satisfies $-190<z_{\mathrm{impact}}<15~\mathrm{cm}$ or $z_{\mathrm{impact}}>25~\mathrm{cm}$, and it must avoid the cracks between calorimeter octants, $2^{\circ}<\phi_{\mathrm{octant}}<43^{\circ}$, unless $z_{\mathrm{impact}}>300~\mathrm{cm}$. A run-dependent veto removes regions with trigger efficiency below 100\%. The event vertex must lie within $35~\mathrm{cm}$ of the nominal interaction point. For leptons with $\theta_{e'}<30^{\circ}$, a vertex reconstructed from central tracks alone is also accepted.
 
 Background from beam--gas interactions, beam-halo muons, and cosmic rays is rejected with the standard H1 timing and topological background finders, combined with the ratio $R_{p_{T}}=p_{T}^{\mathrm{had}}/p_{T}^{e}$ of the transverse momenta of the hadronic final state and the lepton. A single finder flag leads to rejection only if it is corroborated by a significant imbalance, $R_{p_{T}}<0.1$ or $R_{p_{T}}<0.5$ depending on the finder. Events with two simultaneous flags are rejected if $R_{p_{T}}>0.1$. This veto removes 0.29\% of the selected events. QED Compton events are rejected by requiring that the event does not contain two electromagnetic clusters of more than $4~\GeV$ each, with a summed energy above $18~\GeV$, that are back-to-back in azimuth, $-\cos\Delta\phi>0.95$.
 
@@ -121,7 +121,11 @@ where $E-p_{z}$ is the difference of the energy and the longitudinal momentum su
 
 \subsection{Track selection}
 
-Charged tracks are selected with laboratory transverse momentum $p_{T}>0.15~\GeV$ and pseudorapidity $|\eta|<1.6$. They must have at least five hits in the CJC, a radial track length of at least $5~\mathrm{cm}$, and a distance of closest approach to the vertex satisfying $|\mathrm{DCA}'|\sin\theta<2~\mathrm{cm}$, and they must be fitted to the primary vertex. Each track must lie in the current hemisphere of the $\gamma^{*}p$ frame, $x_{F}<0$, and its $z$ and $\pTh$ must fall inside the analysis binning. All variables defined in the $\gamma^{*}p$ frame, including $x_{F}$, are computed with the virtual photon reconstructed with the $e\Sigma$ method; at generator level, they are computed with the exchanged virtual photon. At reconstruction level, $x_{F}$ is computed with the pion mass for all tracks, and its sign is measured relative to the proton direction in the $\gamma^{*}p$ frame. Tracks with an opening angle of less than $0.2~\mathrm{rad}$ to the scattered lepton are rejected, as in previous H1 measurements~\cite{H1:2013qsm,H1:2020zpd}. Tracks close to the lepton arise mainly from conversions of photons radiated by the lepton~\cite{Grebenyuk:2012thesis}. The requirement removes 0.11\% of the true hadrons at generator level, which is corrected for in the unfolding. Accepted tracks are counted as $\hplus$ or $\hminus$ according to their charge, without particle identification. The charge is misreconstructed for 0.19\% of the tracks.
+Charged tracks are selected with laboratory transverse momentum $p_{T}>0.15~\GeV$ and pseudorapidity $|\eta|<1.6$. They must have at least five hits in the CJC, a radial track length of at least $5~\mathrm{cm}$, and a distance of closest approach to the vertex satisfying $|\mathrm{DCA}'|\sin\theta<2~\mathrm{cm}$, and they must be fitted to the primary vertex. Each track must lie in the current hemisphere of the $\gamma^{*}p$ frame, $x_{F}<0$, and its $z$ and $\pTh$ must fall inside the analysis binning. All variables defined in the $\gamma^{*}p$ frame, including $x_{F}$, are computed with the virtual photon reconstructed with the $e\Sigma$ method; at generator level, they are computed with the exchanged virtual photon. At reconstruction level, $x_{F}$ is computed with the pion mass for all tracks, and its sign is measured relative to the proton direction in the $\gamma^{*}p$ frame.
+
+Tracks with an opening angle of less than $0.2~\mathrm{rad}$ to the scattered lepton are rejected, as in previous H1 measurements~\cite{H1:2013qsm,H1:2020zpd}. Tracks close to the lepton arise mainly from conversions of photons radiated by the lepton~\cite{Grebenyuk:2012thesis}. The requirement removes 0.11\% of the true hadrons at generator level, which is corrected for in the unfolding.
+
+Accepted tracks are counted as $\hplus$ or $\hminus$ according to their charge, without particle identification. The charge is misreconstructed for 0.19\% of the tracks.
 
 The measurement is binned in seven $(\Qsq,x)$ cells, seven $z$ intervals, and five $\pTh$ intervals, giving 245 bins per charge (Table~\ref{tab:binning}). At detector level, $\pTh$ is binned twice as finely, with edges $0$, 0.25, 0.5, 0.75, 1, 1.5, 2, 3, 4, 6, and $8~\GeV$, giving 490 detector-level bins per charge. Figure~\ref{fig:phasespace} shows the measured phase space in the $(x,\Qsq)$ plane.
 
@@ -154,7 +158,9 @@ $\pTh$ & & 0, 0.5, 1, 2, 4, $8~\GeV$ \\
 \section{Backgrounds}
 \label{sec:backgrounds}
 
-The only significant event-level background consists of DIS events from outside the measured phase space that migrate into it through resolution effects or QED radiation. Migrations from $60<\Qsq<150~\GeVsq$ are part of the simulated detector response. Contributions from $\Qsq<60~\GeVsq$ are estimated with the dedicated DJANGOH sample and are negligible, 0.005\% of the selected tracks. Diffractive events are part of the measured cross section and are not subtracted. Elastic $\rho^{0}$ production, estimated with DIFFVM, contributes 0.008\% of the selected tracks in total, 2.7\% in the interval $0.7<z<1$, and at most 40\% of the selected tracks in a single bin. It is neither contained in the signal simulation nor subtracted; its full estimated contribution is therefore assigned as an uncertainty, fully correlated across bins and charges (Sec.~\ref{sec:systematics}). \draft{[$\phi$, $\omega$, and proton-dissociative $\rho^{0}$ production are not yet quantified.]}
+One event-level background consists of DIS events from outside the measured phase space that migrate into it through resolution effects or QED radiation. Migrations from $60<\Qsq<150~\GeVsq$ are part of the simulated detector response. Contributions from $\Qsq<60~\GeVsq$ are estimated with the dedicated DJANGOH sample and are negligible, 0.005\% of the selected tracks. Diffractive events are part of the measured cross section and are not subtracted.
+
+Elastic $\rho^{0}$ production, estimated with DIFFVM, contributes 0.008\% of the selected tracks in total, 2.7\% in the interval $0.7<z<1$, and at most 40\% of the selected tracks in a single bin. It is neither contained in the signal simulation nor subtracted, and no uncertainty is assigned to it (Sec.~\ref{sec:systematics}). A fit to a two-track exclusive control sample constrains the DIFFVM normalization to $s=0.08\pm0.15$ of its generator cross section, consistent with the factor $1/7.9=0.13$ obtained by extrapolating measured elastic $\rho^{0}$ cross sections to this $\Qsq$, so the unscaled fractions quoted above are upper bounds on the exclusive content. \draft{[$\phi$, $\omega$, and proton-dissociative $\rho^{0}$ production are not yet quantified.]}
 
 At track level, three background classes are considered. They are shown in Fig.~\ref{fig:bgfrac} as fractions of the selected tracks.
 \begin{enumerate}
@@ -168,8 +174,8 @@ Fits of the electron and neutral-hadron templates to data control regions, at la
 
 \begin{figure}[p]
 \centering
-\includegraphics[width=0.95\textwidth,height=0.8\textheight,keepaspectratio]{figures/fig_reco_background_fractions_onepage_7col_esigmaphotonxf_20261024.pdf}
-\caption{Fractions of the selected tracks attributed by the simulation to electrons and positrons, to daughters of neutral-hadron decays, and to low-$\Qsq$ events, and their sum, which is subtracted, versus $\pTh$ in the $(\Qsq,x,z)$ intervals of the measurement for both charges. The dashed line shows the fraction from elastic $\rho^{0}$ production estimated with DIFFVM, which is not subtracted and enters only through its $\pm100\%$ uncertainty. Each panel is labelled with its $(\Qsq,x,z)$ interval and charge.}
+\includegraphics[width=0.95\textwidth,height=0.8\textheight,keepaspectratio]{figures/fig_reco_background_fractions_onepage_7col_esigmaphotonxf_20261027.pdf}
+\caption{Fractions of the selected tracks attributed by the simulation to electrons and positrons, to daughters of neutral-hadron decays, and to low-$\Qsq$ events, and their sum, which is subtracted, versus $\pTh$ in the $(\Qsq,x,z)$ intervals of the measurement for both charges. The dashed line shows the fraction from elastic $\rho^{0}$ production estimated with DIFFVM, which is neither subtracted nor assigned an uncertainty. Each panel is labelled with its $(\Qsq,x,z)$ interval and charge.}
 \label{fig:bgfrac}
 \end{figure}
 
@@ -181,18 +187,18 @@ Detector effects are corrected with iterative Bayesian unfolding~\cite{DAgostini
 
 The binning was chosen to give adequate purity and acceptance in nearly all bins. The purity, the fraction of tracks reconstructed in a bin that originate from the same particle-level bin, is shown in Fig.~\ref{fig:purity}. It is lowest at high $x$ and high $\pTh$, with a minimum of 9.6\% for $\hplus$ and 10.8\% for $\hminus$. In this region the resolution in the virtual-photon direction is worse, so tracks migrate from the much more populated low-$\pTh$ region into the high-$\pTh$ tail. These bins carry large uncertainties. \draft{[The analysis note foresees that they may be removed from the published set.]}
 
-Cross-generator closure tests are shown in Fig.~\ref{fig:closure}: detector-level DJANGOH events are unfolded with the RAPGAP response and vice versa, and the results are compared with the particle-level predictions of the generator that provided the input. Bin-by-bin correction factors from RAPGAP, applied to DJANGOH, reproduce the integrated cross sections to 0.12\% for $\hplus$ and 0.07\% for $\hminus$. As a cross-check of the nominal result, the data are also unfolded with the regularized method of TUnfold~\cite{Schmitt:2012kp}, with $\tau=10^{-5}$; the systematic variations are not propagated through this cross-check. It agrees with the nominal result, with $\chi^{2}/\mathrm{ndf}=0.37$ ($\hplus$) and 0.31 ($\hminus$) using the diagonal uncertainties. The 20 bins in which TUnfold returns a negative value are compatible with the nominal result, with a maximum pull of 1.7. In 1000 pseudo-experiments, the median bias is $-0.04\%$ for TUnfold and negligible for the nominal method.
+In the cross-generator closure tests of Fig.~\ref{fig:closure}, detector-level DJANGOH events are unfolded with the RAPGAP response and vice versa, and the results are compared with the particle-level predictions of the generator that provided the input. Bin-by-bin correction factors from RAPGAP, applied to DJANGOH, reproduce the integrated cross sections to 0.12\% for $\hplus$ and 0.07\% for $\hminus$. As a cross-check of the nominal result, the data are also unfolded with the regularized method of TUnfold~\cite{Schmitt:2012kp}, with $\tau=10^{-5}$; the systematic variations are not propagated through this cross-check. It agrees with the nominal result, with $\chi^{2}/\mathrm{ndf}=0.37$ ($\hplus$) and 0.31 ($\hminus$) using the diagonal uncertainties. The 20 bins in which TUnfold returns a negative value are compatible with the nominal result, with a maximum pull of 1.7. In 1000 pseudo-experiments, the median bias is $-0.04\%$ for TUnfold and negligible for the nominal method.
 
 \begin{figure}[t]
 \centering
-\includegraphics[width=0.88\textwidth]{figures/fig_response_purity_hp_7col_esigmaphotonxf_20261024.pdf}
+\includegraphics[width=0.88\textwidth]{figures/fig_response_purity_hp_7col_esigmaphotonxf_20261027.pdf}
 \caption{Purity of the RAPGAP response for $\hplus$ versus $\pTh$ in all bins of the measurement. Tracks without a matching hadron are included in the denominator. The purity for $\hminus$ is similar.}
 \label{fig:purity}
 \end{figure}
 
 \begin{figure}[t]
 \centering
-\includegraphics[width=0.88\textwidth]{figures/fig_ibu_crossclosure_7col_zoom_z005_esigmaphotonxf_20261024.pdf}
+\includegraphics[width=0.88\textwidth]{figures/fig_ibu_crossclosure_7col_zoom_z005_esigmaphotonxf_20261027.pdf}
 \caption{Cross-generator closure of the unfolding for $\hplus$ in the four $(\Qsq,x)$ cells with $\Qsq<700~\GeVsq$. Detector-level DJANGOH events unfolded with the RAPGAP response (DJ$\to$RG) and detector-level RAPGAP events unfolded with the DJANGOH response (RG$\to$DJ) are divided by the particle-level prediction of the input generator.}
 \label{fig:closure}
 \end{figure}
@@ -218,24 +224,24 @@ Applying $\Crad$ in place of $\Cgam$ maps the measured cross sections to the Bor
 The uncertainty components and their median values are listed in Table~\ref{tab:syst}, and their dependence on $\pTh$ is shown in Fig.~\ref{fig:syst}. All relative components refer to the unfolded result of the background-subtracted data.
 
 \begin{itemize}
-  \item \textit{Statistical uncertainty}: the standard deviation of the results from 1000 Poisson replicas of the data, each propagated through the unfolding.
-  \item \textit{Unfolding}: the model uncertainty is the difference between results with the RAPGAP and DJANGOH responses. The regularization uncertainty is the change for $\pm1$ iteration. The dependence on the prior distribution of the hadron azimuth $\phi_{h}$ is estimated by unfolding with a prior that is flat in $\phi_{h}$ and taking half of the larger deviation of the two generators. The statistical uncertainty of the fraction of unmatched tracks in the response is propagated through the unfolding.
-  \item \textit{Scattered lepton and hadronic final state}: the lepton energy is shifted by 1\% and its polar angle by 1~mrad. The hadronic energy scales of jets and of the remaining clusters are each shifted by 2\%, and the hadronic polar angle by 1~mrad. Each shift is applied to the simulation and propagated through the response and the unfolding, and the absolute difference is taken as a symmetric uncertainty. The resolution of the hadronic $E-p_{z}$ is varied by an additional smearing in the simulation. The residual difference between data and simulation in the rate of migrations across the $\Qsq$ and $x$ bin edges is also taken as an uncertainty. With the $e\Sigma$ method the hadronic-final-state shifts enter through the reconstructed kinematics. They also enter through the $E-p_{z}$ requirement, which is re-evaluated in each shifted simulation: summed over the six shifted samples, each of about $2.6\times10^{7}$ reconstructed events, $60\,039$ events enter and $63\,695$ leave the selection, mainly for the upward and downward shifts, respectively.
-  \item \textit{Tracking efficiency}: a shift of 0.5\% in the track-reconstruction efficiency.
-  \item \textit{Detector interactions}: the effect of removing the detector-interaction class within the response, with a $\pm100\%$ variation of its normalization. The simulated probability for hadrons to be lost in the detector material is varied by $\pm100\%$, with lost hadrons treated as unreconstructed, and the normalization of the contribution of non-primary tracks is varied.
-  \item \textit{Radiative correction}: the DJANGOH--RAPGAP difference and the statistical uncertainty of the correction including $Z$ exchange, carried unchanged by $\Cgam$ (Sec.~\ref{sec:radcorr}).
-  \item \textit{Background subtraction}: the $\pm100\%$ normalization uncertainty, fully correlated across bins and charges, of the subtracted electron and neutral-hadron yields, together with, as the same nuisance, the daughters of weakly decaying hyperons that are not in the subtracted neutral-hadron class and are removed within the unfolding. It is combined with half the difference between the DJANGOH and RAPGAP templates, the difference between subtraction before and after unfolding, and the model dependence of the unmatched-track fraction. A $\pm30\%$ variation of the low-$\Qsq$ contribution is treated as a separate component, fully correlated across bins and charges.
-  \item \textit{Elastic $\rho^{0}$ production}: this contribution is neither contained in the signal simulation nor subtracted, so its full estimated contribution, from DIFFVM, is assigned as a $\pm100\%$ uncertainty, fully correlated across bins and charges.
-  \item \textit{Luminosity}: 2.7\%, fully correlated across bins and charges.
+  \item \textit{Statistical uncertainty.} It is the standard deviation of the results from 1000 Poisson replicas of the data, each propagated through the unfolding.
+  \item \textit{Unfolding.} The model uncertainty is the difference between results with the RAPGAP and DJANGOH responses. The regularization uncertainty is the change for $\pm1$ iteration. The dependence on the prior distribution of the hadron azimuth $\phi_{h}$ is estimated by unfolding with a prior that is flat in $\phi_{h}$ and taking half of the larger deviation of the two generators. The statistical uncertainty of the simulated response matrix is propagated through the unfolding. A per-bin closure uncertainty, correlated between the charges, is derived from toy studies with two particle-level models, DJANGOH and a data-like truth, as the rms of the mean toy bias relative to the unfolded yield; it is calibrated on the coverage of held-out truth models.
+  \item \textit{Scattered lepton and hadronic final state.} The lepton energy is shifted by 1\% and its polar angle by 1~mrad. The hadronic energy scales of jets and of the remaining clusters are each shifted by 2\%, and the hadronic polar angle by 1~mrad. Each shift is applied to the simulation and propagated through the response and the unfolding, and the absolute difference is taken as a symmetric uncertainty. The resolution of the hadronic $E-p_{z}$ is varied by an additional smearing in the simulation. The residual difference between data and simulation in the rate of migrations across the $\Qsq$ and $x$ bin edges is also taken as an uncertainty. With the $e\Sigma$ method the hadronic-final-state shifts enter through the reconstructed kinematics. They also enter through the $E-p_{z}$ requirement, which is re-evaluated in each shifted simulation. Summed over the six shifted samples, each of about $2.6\times10^{7}$ reconstructed events, $60\,039$ events enter and $63\,695$ leave the selection, mainly for the upward and downward shifts, respectively.
+  \item \textit{Tracking efficiency.} The track-reconstruction efficiency is shifted by 0.5\%.
+  \item \textit{Detector interactions.} The normalization of the detector-interaction class removed within the response is varied by $\pm100\%$. The simulated probability for hadrons to be lost in the detector material is varied by $\pm100\%$, with lost hadrons treated as unreconstructed, and the normalization of the contribution of non-primary tracks is varied.
+  \item \textit{Radiative correction.} The uncertainty combines the DJANGOH--RAPGAP difference and the statistical uncertainty of the correction including $Z$ exchange, carried unchanged by $\Cgam$ (Sec.~\ref{sec:radcorr}).
+  \item \textit{Background subtraction.} The subtracted electron and neutral-hadron yields carry a $\pm100\%$ normalization uncertainty, fully correlated across bins and charges. The same nuisance also varies the daughters of weakly decaying hyperons that are not in the subtracted neutral-hadron class and are removed within the unfolding. This term is combined with half the difference between the DJANGOH and RAPGAP templates, the difference between subtraction before and after unfolding, and the model dependence of the unmatched-track fraction. A $\pm30\%$ variation of the low-$\Qsq$ contribution is treated as a separate component, fully correlated across bins and charges.
+  \item \textit{Elastic $\rho^{0}$ production.} This contribution, estimated with DIFFVM, is neither contained in the signal simulation nor subtracted. No uncertainty is assigned, since some theoretical frameworks include diffractive $\rho^{0}$ production in the semi-inclusive cross section. For a subtraction $\sigma\to\sigma(1-\epsilon_{i}f_{i})$ of the raw and Born cross sections alike, with $\epsilon_{i}f_{i}$ fully correlated across bins and charges ($\rho_{ij}=\epsilon_{i}\epsilon_{j}$), the estimated elastic-$\rho^{0}$ fraction $f_{i}$ at the data-tuned DIFFVM scale, its recommended uncertainty, the conservative 95\% bound, and the sign $\epsilon_{i}$ are given for each bin with the cross sections (supplementary material).
+  \item \textit{Luminosity.} The luminosity uncertainty is 2.7\%, fully correlated across bins and charges.
 \end{itemize}
 
 The $\pm100\%$ normalization uncertainty of the background subtraction is motivated by two studies. First, the control-region fits to the tail of the distance-of-closest-approach distribution do not constrain the two normalizations independently (Sec.~\ref{sec:backgrounds}). Second, when a tighter requirement, $|\mathrm{DCA}'|<0.3~\mathrm{cm}$, is propagated consistently through data, response, templates, and unfolding, 86 bins shift by more than three standard deviations, evaluated with 1000 pseudo-experiments, whereas 1.2 are expected. The integrated cross sections change by $-2.4\%$ ($\hplus$) and $-1.4\%$ ($\hminus$). All but two of the significant shifts are covered by the $\pm100\%$ envelope. The two exceptions require 114\% of the envelope for $\hplus$ at $700<\Qsq<1500~\GeVsq$, $0.034<x<0.150$, $z<0.05$, $0.5<\pTh<1~\GeV$, and 104\% for $\hminus$ at $300<\Qsq<700~\GeVsq$, $0.016<x<0.069$, $0.3<z<0.5$, $4<\pTh<8~\GeV$; the $\pm100\%$ uncertainty is retained. Integrated over the measured phase space, the background-normalization uncertainty is 9.1\% ($\hplus$) and 9.4\% ($\hminus$).
 
-The total uncertainty is the quadrature sum of all components. Its median is 8.1\% for $\hplus$ and 8.9\% for $\hminus$, and it ranges from 4.7\% to 104\% ($\hplus$) and 125\% ($\hminus$); 62\% of the bins have a total uncertainty below 10\%. The luminosity, background-normalization, low-$\Qsq$, and elastic-$\rho^{0}$ components are fully correlated across all bins and between the charges. The correlations of the other components between bins and between the charges are included in the covariance matrices, which are positive definite and are provided with the tabulated results.
+The total uncertainty is the quadrature sum of all components. Its median is 8.6\% for $\hplus$ and 9.3\% for $\hminus$, and it ranges from 4.7\% to 108\% ($\hplus$) and 131\% ($\hminus$); 57\% of the bins have a total uncertainty below 10\%. The luminosity, background-normalization, and low-$\Qsq$ components are fully correlated across all bins and between the charges. The correlations of the other components between bins and between the charges are included in the covariance matrices, which are positive definite and are provided with the tabulated results.
 
 \begin{table}[t]
 \centering
-\caption{Uncertainty components and their median relative size over the 245 bins of each charge. Each median refers to that component alone, so the medians do not add in quadrature to the median total. ``Background subtraction'' combines the four terms described in the text. The low-$\Qsq$ and elastic-$\rho^{0}$ components are small in most bins and reach relative uncertainties of up to 3.6\% and 35\%, respectively, in individual bins.}
+\caption{Uncertainty components and their median relative size over the 245 bins of each charge. Each median refers to that component alone, so the medians do not add in quadrature to the median total. ``Background subtraction'' combines the four terms described in the text. The low-$\Qsq$ component is small in most bins and reaches a relative uncertainty of up to 3.6\% in individual bins.}
 \label{tab:syst}
 \begin{tabular}{lcc}
 \toprule
@@ -246,7 +252,9 @@ Background subtraction & 3.6 & 3.8 \\
 Luminosity & 2.7 & 2.7 \\
 Scattered-lepton energy & 2.7 & 2.8 \\
 Unfolding model & 1.4 & 1.4 \\
+Unfolding closure & 1.3 & 1.1 \\
 Hadron-azimuth prior & 1.0 & 1.0 \\
+Response-matrix simulation statistics & 0.83 & 0.89 \\
 Hadron loss in detector material & 0.76 & 0.77 \\
 Unfolding regularization & 0.67 & 0.62 \\
 Hadronic energy scale, jets & 0.59 & 0.65 \\
@@ -255,33 +263,31 @@ Hadronic $E-p_{z}$ resolution & 0.42 & 0.40 \\
 Radiative correction, statistical & 0.41 & 0.44 \\
 Radiative correction, generator difference & 0.27 & 0.29 \\
 Scattered-lepton polar angle & 0.27 & 0.28 \\
-Unmatched-track fraction, simulation statistics & 0.22 & 0.26 \\
 $(\Qsq,x)$ bin-edge migrations & 0.22 & 0.25 \\
 Detector-interaction removal & 0.21 & 0.17 \\
 Hadronic energy scale, remaining clusters & 0.14 & 0.14 \\
 Hadronic polar angle & 0.10 & 0.12 \\
 Non-primary track normalization & 0.077 & 0.061 \\
-Elastic $\rho^{0}$ production & 0.0045 & 0.0037 \\
 Low-$\Qsq$ normalization & $<0.001$ & $<0.001$ \\
 \midrule
-Total & 8.1 & 8.9 \\
+Total & 8.6 & 9.3 \\
 \bottomrule
 \end{tabular}
 \end{table}
 
 \begin{figure}[p]
 \centering
-\includegraphics[page=1,width=\textwidth,height=0.42\textheight,keepaspectratio]{figures/fig_syst_uncertainty_sources_esigmaphotonxf_20261024_ylim015.pdf}\\[4pt]
-\includegraphics[page=2,width=\textwidth,height=0.42\textheight,keepaspectratio]{figures/fig_syst_uncertainty_sources_esigmaphotonxf_20261024_ylim015.pdf}
+\includegraphics[page=1,width=\textwidth,height=0.42\textheight,keepaspectratio]{figures/fig_syst_uncertainty_sources_esigmaphotonxf_20261027_ylim015.pdf}\\[4pt]
+\includegraphics[page=2,width=\textwidth,height=0.42\textheight,keepaspectratio]{figures/fig_syst_uncertainty_sources_esigmaphotonxf_20261027_ylim015.pdf}
 \caption{Relative uncertainty components and their quadrature sum versus $\pTh$ for $\hplus$ (upper) and $\hminus$ (lower), shown up to 15\%.}
 \label{fig:syst}
 \end{figure}
 
-Variations of the track and event selection test the stability of the result (Table~\ref{tab:robust}). A new response is built for each variation, and the data are unfolded again. Changing the distance-of-closest-approach requirement to $1~\mathrm{cm}$ changes the result by at most 5.3\%, and to $3~\mathrm{cm}$ by less than 0.01\%. Lowering the minimum laboratory transverse momentum changes it by at most 6.0\%. Lowering the $E-p_{z}$ requirement to $25~\GeV$ changes it by at most 28\%. The tight requirement $|\mathrm{DCA}'|<0.3~\mathrm{cm}$, discussed above, changes it by at most 57\%. Tightening the pseudorapidity requirement has the largest effect, up to 83\%, and a few bins then have low statistics. It is the only variation with bins outside the total uncertainty of the nominal result: one bin for $\hplus$ and five for $\hminus$, reduced to one and two when the statistical difference between the two samples is included. For all other variations, no bin lies outside the total uncertainty.
+Variations of the track and event selection test the stability of the result (Table~\ref{tab:robust}). A new response is built for each variation, and the data are unfolded again. Changing the distance-of-closest-approach requirement to $1~\mathrm{cm}$ changes the result by at most 5.3\%, and to $3~\mathrm{cm}$ by less than 0.01\%. Lowering the minimum laboratory transverse momentum changes it by at most 6.0\%. Lowering the $E-p_{z}$ requirement to $25~\GeV$ changes it by at most 28\%. The tight requirement $|\mathrm{DCA}'|<0.3~\mathrm{cm}$, discussed above, changes it by at most 57\%. Tightening the pseudorapidity requirement has the largest effect, up to 83\%, and a few bins then have low statistics. It is the only variation with bins outside the total uncertainty of the nominal result, one bin for $\hplus$ and five for $\hminus$, or one and two when the statistical difference between the two samples is included. For all other variations, no bin lies outside the total uncertainty.
 
 \begin{table}[t]
 \centering
-\caption{Ratio of the cross section with a varied selection to that with the nominal selection: minimum, median, and maximum over the 490 bins.}
+\caption{Minimum, median, and maximum over the 490 bins of the ratio of the cross section with a varied selection to that with the nominal selection.}
 \label{tab:robust}
 \begin{tabular}{llccc}
 \toprule
@@ -311,14 +317,14 @@ with normalization uncertainties of 2.7\% from the luminosity and $\pm1.0~\nb$ (
 
 \begin{figure}[p]
 \centering
-\includegraphics[width=\textwidth,height=0.88\textheight,keepaspectratio]{figures/fig_results_born_xsec_vertical_noz_hplus_esigmaphotonxf_20261024.pdf}
+\includegraphics[width=\textwidth,height=0.88\textheight,keepaspectratio]{figures/fig_results_born_xsec_vertical_noz_hplus_esigmaphotonxf_20261027.pdf}
 \caption{Born-level cross sections $\mathrm{d}^{4}\sigma/\mathrm{d}\Qsq\,\mathrm{d}x\,\mathrm{d}z\,\mathrm{d}\pTh$ for $\hplus$ versus $\pTh$ in the seven $(\Qsq,x)$ cells and seven $z$ intervals, at the Born level of single-photon exchange. Vertical bars show the total uncertainty; horizontal bars show the bin width.}
 \label{fig:xsec_hp}
 \end{figure}
 
 \begin{figure}[p]
 \centering
-\includegraphics[width=\textwidth,height=0.88\textheight,keepaspectratio]{figures/fig_results_born_xsec_vertical_noz_hminus_esigmaphotonxf_20261024.pdf}
+\includegraphics[width=\textwidth,height=0.88\textheight,keepaspectratio]{figures/fig_results_born_xsec_vertical_noz_hminus_esigmaphotonxf_20261027.pdf}
 \caption{Born-level cross sections $\mathrm{d}^{4}\sigma/\mathrm{d}\Qsq\,\mathrm{d}x\,\mathrm{d}z\,\mathrm{d}\pTh$ for $\hminus$, as in Fig.~\ref{fig:xsec_hp}.}
 \label{fig:xsec_hm}
 \end{figure}
@@ -339,38 +345,42 @@ Table~\ref{tab:ratio} gives the ratio $R=\sigma(\hplus)/\sigma(\hminus)$ integra
 $\Qsq$ (GeV$^{2}$) & $x$ & $z>0.2$ & $0.2<z<0.3$ & $0.3<z<0.5$ & $0.5<z<0.7$ & $0.7<z<1$ \\
 \midrule
 150--300 & 0.0021--0.0071 & $1.02\pm0.01\pm0.01$ & $1.02\pm0.01\pm0.01$ & $1.01\pm0.01\pm0.01$ & $1.11\pm0.04\pm0.02$ & $0.97\pm0.08\pm0.10$ \\
-150--300 & 0.0071--0.030 & $1.09\pm0.01\pm0.01$ & $1.06\pm0.01\pm0.01$ & $1.13\pm0.02\pm0.02$ & $1.20\pm0.04\pm0.03$ & $1.12\pm0.08\pm0.06$ \\
+150--300 & 0.0071--0.030 & $1.09\pm0.01\pm0.01$ & $1.06\pm0.01\pm0.01$ & $1.13\pm0.02\pm0.02$ & $1.20\pm0.04\pm0.03$ & $1.12\pm0.08\pm0.07$ \\
 300--700 & 0.0042--0.016 & $1.09\pm0.01\pm0.01$ & $1.04\pm0.02\pm0.01$ & $1.13\pm0.02\pm0.01$ & $1.28\pm0.06\pm0.02$ & $1.01\pm0.11\pm0.05$ \\
 300--700 & 0.016--0.069 & $1.20\pm0.01\pm0.01$ & $1.14\pm0.02\pm0.02$ & $1.24\pm0.02\pm0.02$ & $1.39\pm0.06\pm0.05$ & $1.91\pm0.20\pm0.20$ \\
-700--1500 & 0.0099--0.034 & $1.20\pm0.02\pm0.01$ & $1.13\pm0.03\pm0.01$ & $1.26\pm0.05\pm0.02$ & $1.38\pm0.11\pm0.05$ & $1.57\pm0.32\pm0.11$ \\
-700--1500 & 0.034--0.150 & $1.33\pm0.03\pm0.02$ & $1.19\pm0.04\pm0.03$ & $1.45\pm0.05\pm0.04$ & $1.79\pm0.15\pm0.08$ & $1.70\pm0.35\pm0.25$ \\
-1500--20\,000 & 0.021--1 & $1.49\pm0.03\pm0.02$ & $1.38\pm0.05\pm0.03$ & $1.48\pm0.06\pm0.04$ & $2.37\pm0.26\pm0.15$ & $3.43\pm0.86\pm0.31$ \\
+700--1500 & 0.0099--0.034 & $1.20\pm0.02\pm0.01$ & $1.13\pm0.03\pm0.01$ & $1.26\pm0.05\pm0.02$ & $1.38\pm0.11\pm0.06$ & $1.57\pm0.32\pm0.11$ \\
+700--1500 & 0.034--0.150 & $1.33\pm0.03\pm0.02$ & $1.19\pm0.04\pm0.03$ & $1.45\pm0.05\pm0.04$ & $1.79\pm0.15\pm0.08$ & $1.70\pm0.35\pm0.27$ \\
+1500--20\,000 & 0.021--1 & $1.49\pm0.03\pm0.02$ & $1.38\pm0.05\pm0.03$ & $1.48\pm0.06\pm0.04$ & $2.37\pm0.26\pm0.15$ & $3.43\pm0.86\pm0.32$ \\
 \bottomrule
 \end{tabular}}
 \end{table}
 
 \begin{figure}[p]
 \centering
-\includegraphics[width=\textwidth,height=0.8\textheight,keepaspectratio]{figures/fig_ratio_hplus_hminus_bornnoZ_esigmaphotonxf_20261024.pdf}
+\includegraphics[width=\textwidth,height=0.8\textheight,keepaspectratio]{figures/fig_ratio_hplus_hminus_bornnoZ_esigmaphotonxf_20261027.pdf}
 \caption{Ratio $R=\sigma(\hplus)/\sigma(\hminus)$ versus $\pTh$ in the seven $(\Qsq,x)$ cells (rows) and seven $z$ intervals (columns). The ratio is at the Born level of single-photon exchange, with $\Cgam$ applied to each charge, as in Table~\ref{tab:ratio}. Inner bars show the statistical and outer bars the total uncertainty, both from the full covariance matrix including the correlations between the charges. Triangles mark points outside the displayed range.}
 \label{fig:ratio}
 \end{figure}
 
 \subsection{Comparison with predictions}
 
-The data are compared with the predictions of PYTHIA~8, SHERPA~3, DJANGOH, and RAPGAP, all without QED radiation from the lepton line, and with the MAPTMD24 fit of TMD parton distributions and fragmentation functions~\cite{Bacchetta:2024qre} (Figs.~\ref{fig:datamc}--\ref{fig:map_hm}). The generators combine different parton showers with string (PYTHIA, DJANGOH, RAPGAP) or cluster (SHERPA) hadronization, and their predictions differ substantially across $z$ and $\pTh$. They are evaluated at the Born level with $\gamma$ and $Z$ exchange, and SHERPA for $e^{+}p$ collisions only. For the comparison in Fig.~\ref{fig:datamc}, the data are therefore corrected with $\Crad$ to the same level (Sec.~\ref{sec:radcorr}). MAPTMD24 provides predictions in 230 of the 490 bins, with none at $z<0.05$ and sparse $\pTh$ coverage at large $z$, and is shown only in those bins. MAPTMD24 is a pure photon-exchange calculation, like the data. \draft{[TODO: state the quantitative conclusions of the comparison.]}
+The data are compared with the predictions of PYTHIA~8, SHERPA~3, DJANGOH, and RAPGAP, all without QED radiation from the lepton line (Fig.~\ref{fig:datamc}), and with the MAPTMD24 fit of TMD parton distributions and fragmentation functions~\cite{Bacchetta:2024qre} (Figs.~\ref{fig:map_hp} and~\ref{fig:map_hm}). The generators combine different parton showers with string (PYTHIA, DJANGOH, RAPGAP) or cluster (SHERPA) hadronization, and their predictions differ substantially across $z$ and $\pTh$. They are evaluated at the Born level with $\gamma$ and $Z$ exchange, and SHERPA for $e^{+}p$ collisions only. For the comparison in Fig.~\ref{fig:datamc}, the data are therefore corrected with $\Crad$ to the same level (Sec.~\ref{sec:radcorr}).
+
+PYTHIA exceeds the data at $\pTh<1~\GeV$ and $z>0.3$, by 10--35\% for $0.3<z<0.5$ and by up to a factor 2--3 at $z>0.7$. The median data/MC ratio over all 490 bins (not all shown) is 0.999 (PYTHIA), 0.998 (SHERPA), 1.114 (RAPGAP), and 1.054 (DJANGOH). SHERPA agrees with the data to a few per cent for $\Qsq<700~\GeVsq$ and lies about 10\% below them for $\Qsq>1500~\GeVsq$ (not shown).
+
+MAPTMD24 provides predictions in 230 of the 490 bins, with none at $z<0.05$ and sparse $\pTh$ coverage at large $z$, and is shown only in those bins. MAPTMD24 lies below the data, with a median MAPTMD24/data ratio of 0.93 over its 230 bins and $\chi^{2}/\mathrm{ndf}=2533/230$ for both charges with the full covariance (theory band not included). \draft{[$\alpha_{\mathrm{em}}$ convention of MAPTMD24 to be confirmed.]}
 
 \begin{figure}[p]
 \centering
-\includegraphics[page=1,width=\textwidth]{figures/fig_datamc_born_withZ_esigmaphotonxf_20261024.pdf}
-\caption{Born-level cross sections for $\hplus$ in the four $(\Qsq,x)$ cells with $\Qsq<700~\GeVsq$, compared with PYTHIA~8, SHERPA~3, DJANGOH, and RAPGAP, and with MAPTMD24 where available (band: 68\% uncertainty interval). Vertical bars show the total uncertainty. The data are corrected to the Born level including $Z$ exchange and running $\alpha$, as the generators, which are evaluated without QED radiation. The MAPTMD24 band is a pure photon-exchange calculation at the Born level of single-photon exchange; it is compared with the data at the matching level in Figs.~\ref{fig:map_hp} and~\ref{fig:map_hm}. SHERPA~3 is for $e^{+}p$ only. Lower panels show the ratio MC/data.}
+\includegraphics[width=\textwidth]{figures/fig_datamc_born_withZ_mc_hplus_q2lt700_esigmaphotonxf_20261027.pdf}
+\caption{Born-level cross sections for $\hplus$ in the four $(\Qsq,x)$ cells with $\Qsq<700~\GeVsq$, compared with PYTHIA~8, SHERPA~3, DJANGOH, and RAPGAP. Vertical bars show the total uncertainty. The data are corrected to the Born level including $Z$ exchange. The generators are evaluated without QED radiation, with non-radiative samples for DJANGOH and RAPGAP. SHERPA~3 uses a fixed $\alpha$ in the $G_{\mu}$ scheme and is for $e^{+}p$ only. Because $\Crad$ is computed with DJANGOH, the DJANGOH ratio equals that of the data before radiative correction to the radiative DJANGOH prediction and does not test the QED correction. Because $\Crad$ from DJANGOH and RAPGAP agree to better than 1\%, the RAPGAP ratio is insensitive to the QED correction and tests the non-radiative RAPGAP prediction. Lower panels show the ratio MC/data.}
 \label{fig:datamc}
 \end{figure}
 
 \begin{figure}[p]
 \centering
 \includegraphics[width=0.85\textwidth]{figures/fig_maptmd24_born_esigma_hplus.pdf}
-\caption{Born-level cross sections for $\hplus$ compared with MAPTMD24 (band: 68\% uncertainty interval), with the ratio of data to prediction in the lower panels. The data and MAPTMD24 are both at the Born level of single-photon exchange. One ratio point lies outside the displayed range.}
+\caption{Born-level cross sections for $\hplus$ compared with MAPTMD24, with the ratio of data to prediction in the lower panels. The band shows the 68\% uncertainty interval of MAPTMD24. The data are at the photon-exchange Born level, and MAPTMD24 is a single-photon-exchange calculation. One ratio point lies outside the displayed range.}
 \label{fig:map_hp}
 \end{figure}
 
@@ -385,7 +395,7 @@ The data are compared with the predictions of PYTHIA~8, SHERPA~3, DJANGOH, and R
 \section{Summary}
 \label{sec:summary}
 
-Cross sections for the semi-inclusive production of charged hadrons in deep-inelastic $ep$ scattering have been measured with the H1 detector at $150<\Qsq<20\,000~\GeVsq$ and $0.1<y<0.7$, using $351~\pbinv$ of data at $\sqrt{s}=319~\GeV$. The measurement is fully differential in $\Qsq$, $x$, $z$, and $\pTh$, separate for positive and negative hadrons, and corrected to the Born level of single-photon exchange, in 490 bins with median total uncertainties of 8.1\% ($\hplus$) and 8.9\% ($\hminus$). The $\pTh$ spectra harden strongly with $z$. The ratio of positive to negative hadrons rises with $x$ and $z$, from unity at low $x$ to about 2.5 at large $z$ for $\Qsq>1500~\GeVsq$, as expected from valence $u$-quark dominance and favoured fragmentation. The measurement extends SIDIS by more than two orders of magnitude in $\Qsq$, to the scales of the $Z$-boson Drell--Yan data used in global TMD analyses. It provides a high-$\Qsq$ reference for TMD factorization and evolution and for the modelling of hadronization in event generators, ahead of the Electron-Ion Collider.
+Cross sections for the semi-inclusive production of charged hadrons in deep-inelastic $ep$ scattering have been measured with the H1 detector at $150<\Qsq<20\,000~\GeVsq$ and $0.1<y<0.7$, using $351~\pbinv$ of data at $\sqrt{s}=319~\GeV$. The measurement is fully differential in $\Qsq$, $x$, $z$, and $\pTh$, separate for positive and negative hadrons, and corrected to the Born level of single-photon exchange, in 490 bins with median total uncertainties of 8.6\% ($\hplus$) and 9.3\% ($\hminus$). The $\pTh$ spectra harden strongly with $z$. The ratio of positive to negative hadrons rises with $x$ and $z$, from unity at low $x$ to about 2.5 at large $z$ for $\Qsq>1500~\GeVsq$, as expected from valence $u$-quark dominance and favoured fragmentation. The measurement extends SIDIS by more than two orders of magnitude in $\Qsq$, to the scales of the $Z$-boson Drell--Yan data used in global TMD analyses. It provides a high-$\Qsq$ reference for TMD factorization and evolution and for the modelling of hadronization in event generators, ahead of the Electron-Ion Collider.
 
 \section*{Acknowledgements}
 \draft{[Standard H1 acknowledgements.]}
@@ -399,32 +409,32 @@ Cross sections for the semi-inclusive production of charged hadrons in deep-inel
 \section{Tables of cross sections}
 \label{app:tables}
 
-Tables~\ref{tab:sidis-crosssections-noZ-pos-S0x0}--\ref{tab:sidis-crosssections-noZ-neg-S3x0} list the cross sections at the Born level of single-photon exchange, without $Z$ exchange, integrated over each bin, for $\hplus$ followed by $\hminus$. For each bin, the tables give the cross section, its statistical uncertainty, and its total uncertainty, together with the radiative correction including $Z$ exchange, $\Crad$, for reference, the applied correction factor $\Cgam$, and the bin volume. The systematic uncertainty is the quadrature sum of all components except the statistical uncertainties of the data and of the radiative correction; the latter is included in the uncertainty of the correction factors. The values are preliminary.
+Tables~\ref{tab:sidis-crosssections-noZ-pos-S0x0}--\ref{tab:sidis-crosssections-noZ-neg-S3x0} list the cross sections at the Born level of single-photon exchange, without $Z$ exchange, integrated over each bin, for $\hplus$ followed by $\hminus$. For each bin, the tables give the cross section, its statistical uncertainty, and its systematic uncertainty, together with the applied correction factor $\Cgam$ and the bin volume. The systematic uncertainty is the quadrature sum of all components except the statistical uncertainties of the data and of the radiative correction; the latter is included in the uncertainty of the correction factors. The values are preliminary.
 
 \begingroup
 \makeatletter
 \def\@floatboxreset{\reset@font\footnotesize\@setminipage}
 \makeatother
-\input{tables/highQ2_z005_esigmaphotonxf_born_public_2026-10-24_noZ/blocks/block_noZ_pos_S0_x0}
-\input{tables/highQ2_z005_esigmaphotonxf_born_public_2026-10-24_noZ/blocks/block_noZ_pos_S0_x1}
+\input{tables/highQ2_z005_esigmaphotonxf_born_public_2026-10-27_noZ/blocks/block_noZ_pos_S0_x0}
+\input{tables/highQ2_z005_esigmaphotonxf_born_public_2026-10-27_noZ/blocks/block_noZ_pos_S0_x1}
 \clearpage
-\input{tables/highQ2_z005_esigmaphotonxf_born_public_2026-10-24_noZ/blocks/block_noZ_pos_S1_x0}
-\input{tables/highQ2_z005_esigmaphotonxf_born_public_2026-10-24_noZ/blocks/block_noZ_pos_S1_x1}
+\input{tables/highQ2_z005_esigmaphotonxf_born_public_2026-10-27_noZ/blocks/block_noZ_pos_S1_x0}
+\input{tables/highQ2_z005_esigmaphotonxf_born_public_2026-10-27_noZ/blocks/block_noZ_pos_S1_x1}
 \clearpage
-\input{tables/highQ2_z005_esigmaphotonxf_born_public_2026-10-24_noZ/blocks/block_noZ_pos_S2_x0}
-\input{tables/highQ2_z005_esigmaphotonxf_born_public_2026-10-24_noZ/blocks/block_noZ_pos_S2_x1}
+\input{tables/highQ2_z005_esigmaphotonxf_born_public_2026-10-27_noZ/blocks/block_noZ_pos_S2_x0}
+\input{tables/highQ2_z005_esigmaphotonxf_born_public_2026-10-27_noZ/blocks/block_noZ_pos_S2_x1}
 \clearpage
-\input{tables/highQ2_z005_esigmaphotonxf_born_public_2026-10-24_noZ/blocks/block_noZ_pos_S3_x0}
-\input{tables/highQ2_z005_esigmaphotonxf_born_public_2026-10-24_noZ/blocks/block_noZ_neg_S0_x0}
+\input{tables/highQ2_z005_esigmaphotonxf_born_public_2026-10-27_noZ/blocks/block_noZ_pos_S3_x0}
+\input{tables/highQ2_z005_esigmaphotonxf_born_public_2026-10-27_noZ/blocks/block_noZ_neg_S0_x0}
 \clearpage
-\input{tables/highQ2_z005_esigmaphotonxf_born_public_2026-10-24_noZ/blocks/block_noZ_neg_S0_x1}
-\input{tables/highQ2_z005_esigmaphotonxf_born_public_2026-10-24_noZ/blocks/block_noZ_neg_S1_x0}
+\input{tables/highQ2_z005_esigmaphotonxf_born_public_2026-10-27_noZ/blocks/block_noZ_neg_S0_x1}
+\input{tables/highQ2_z005_esigmaphotonxf_born_public_2026-10-27_noZ/blocks/block_noZ_neg_S1_x0}
 \clearpage
-\input{tables/highQ2_z005_esigmaphotonxf_born_public_2026-10-24_noZ/blocks/block_noZ_neg_S1_x1}
-\input{tables/highQ2_z005_esigmaphotonxf_born_public_2026-10-24_noZ/blocks/block_noZ_neg_S2_x0}
+\input{tables/highQ2_z005_esigmaphotonxf_born_public_2026-10-27_noZ/blocks/block_noZ_neg_S1_x1}
+\input{tables/highQ2_z005_esigmaphotonxf_born_public_2026-10-27_noZ/blocks/block_noZ_neg_S2_x0}
 \clearpage
-\input{tables/highQ2_z005_esigmaphotonxf_born_public_2026-10-24_noZ/blocks/block_noZ_neg_S2_x1}
-\input{tables/highQ2_z005_esigmaphotonxf_born_public_2026-10-24_noZ/blocks/block_noZ_neg_S3_x0}
+\input{tables/highQ2_z005_esigmaphotonxf_born_public_2026-10-27_noZ/blocks/block_noZ_neg_S2_x1}
+\input{tables/highQ2_z005_esigmaphotonxf_born_public_2026-10-27_noZ/blocks/block_noZ_neg_S3_x0}
 \endgroup
 
 \end{document}
