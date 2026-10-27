@@ -1,0 +1,99 @@
+%% ==========================================================================
+% AUTO-GENERATED FILE -- DO NOT EDIT BY HAND
+% Generator: generate_latex_cross_section_tables.py v1.3.0
+% Generated (UTC): 2026-10-27T22:08:51Z
+% Level/basis: Photon-exchange-only Born level WITHOUT Z exchange: sigma_Born_gamma = C_gamma_born x sigma_raw, C_gamma_born from the DJANGOH14 NoZ photon-only Born sample (releasebin, EMPZ>45).
+% Method: IBU $k=4$ unfolding, $L_{\mathrm{data}} = 350.891$~pb$^{-1}$
+% Sigma form: binned (per-bin integrated cross section, nb; the final column is the four-dimensional bin volume dQ2 dx dz dpT_h in GeV^3 from the release edge columns, x width capped at 1 - x_min for cells with x_max above 1)
+% Systematic column: quadrature of components
+%   included: ibu_model_rel (IBU model (B1-floored cross-closure)), ibu_reg_rel (IBU regularization), detint_removal_rel (det.int. Class-2 removal), unfold_closure_rel (unfolding closure (per-bin toy bias)), response_mcstat_rel (response-matrix MC statistics), hfs_jes_rel (HFS jet-energy scale), hfs_rces_rel (HFS RCES), hfs_theta_rel (HFS polar angle), elec_energy_rel (electron energy), elec_theta_rel (electron polar angle), sigmah_smear_rel (sigmah_smear_rel), lumi_rel (luminosity), tracking_eff_m0p5_rel (tracking efficiency (-0.5%)), phi_h_gauss_rel (phi_h acceptance (Gaussian smear)), c_rad_gen_rel (C_rad generator scheme (DJANGOH14 vs RAPGAP)), bgsub_model_rel (bgsub_model_rel), bgsub_lowq2_norm_rel (bgsub_lowq2_norm_rel), bgsub_stage_rel (bgsub_stage_rel), bgsub_fakefrac_rel (bgsub_fakefrac_rel), straddle_residual_rel (straddle_residual_rel), m2_zshift_rel (m2_zshift_rel), bgsub_env100_hyp_rel (bgsub_env100_hyp_rel), nonprimary_norm_v5_rel (nonprimary_norm_v5_rel), nucliaweight_primaryloss_rel (nucliaweight_primaryloss_rel)
+%   excluded: ibu_stat_rel (unfolded-data statistical), c_rad_stat_rel (C_rad MC statistics)
+%%   (ibu_stat_rel is carried by the separate stat. unc. column; c_rad_stat_rel by the factor column when excluded here)
+% Factor column (ONLY the applied factor C_gamma_Born is tabulated in this table; the reference factor is not shown):
+%   C_gamma_Born = photon-exchange-only Born factor, DJANGOH14 NoZ table; uncertainty = statistical (relative_stat_unc of the applied table) in quadrature with the SAME budget c_rad_gen_rel scheme spread CARRIED OVER from the WITH-Z pair (no RAPGAP NoZ photon-only sample exists; noz_crad_gen_mode=carry)
+% NO-Z MODE BOOKKEEPING: c_rad_gen_rel is CARRIED OVER from the WITH-Z DJANGOH14-vs-RAPGAP C_rad pair as the scheme-spread proxy for C_gamma_born; no RAPGAP NoZ photon-only sample exists (noz_crad_gen_mode=carry).
+%% Status caveats (quote with any number):
+%   - Edition esigmaphotonxf_2026-10-27b (eSigma photon frame including the x_F < 0 hemisphere cut; systematic budget with the per-bin unfolding-closure term and the response-matrix MC statistics in the quoted total, no DIFFVM term, secondary-interaction removal = model (+) statistical part).
+%   - Release: bbb_ibu_bgsub_setRprime_conebase_optA_q2esgen_esigmaphotonxf_S3xmerged_zlow005_pT5_eta1p6_radlen5_nhit5_2026-10-27b (IBU k=4, set-R' background subtracted, OPT-A cone-basis response; Born column = born_crad_applied/optA_crad_applied_per_bin.csv).
+%   - C_rad: DJANGOH14, true-gamma* generator kinematics (ISR-only E_eff) and x_F in the gamma*p frame; C_gammaBorn table cgammaborn_esigmaphotonxf_2026-10-27b.
+%   - Systematic column: quadrature of the 24 quoted systematic sources of esph_budget_v2.csv (26 quoted sources less the two statistical terms ibu_stat_rel and c_rad_stat_rel, which are carried by the stat. and factor columns); the response-matrix MC statistics (response_mcstat_rel) and the unfolding closure (unfold_closure_rel) are inside the systematic column.
+%   - factor_columns_consistency vs the reference single-factor product is a diagnostic here (previous_factor_tol_rel = 1e9): C_rad and C_gammaBorn differ by design.
+%   - No species PID (inclusive charged hadrons); multiplicities blocked (no DIS denominator).
+%   - Mixed-beam validity only; not valid for any per-beam or e- Born target; do not compare against RAD-level MC predictions without the same correction.
+%% Inputs (sha256):
+%   /data/dust/group/h1/klesthen/BaryonAsym/H1ChargedSidis_HighQ2/output_v6/central/data_release/systematics_bgsub_env100hyp_nonprimary_nw_optA_esigmaphotonxf_2026-10-27b/esph_budget_v2.csv
+%     sha256: dc0f02bdb4a503f6f4d7de094a908d5d8690c62a809c3f2c35d32d385860d758   rows: 490
+%   /data/dust/group/h1/klesthen/BaryonAsym/sidis_highQ2/data/radiative/cgammaborn_esigmaphotonxf_2026-10-27b/cgammaborn_esigmaphotonxf_2026-10-27b.csv
+%     sha256: 5118c0d921b47f7104934d028b390ec00386d8a6effd422a8b0fe82228132675   rows: 490
+%   /data/dust/group/h1/klesthen/BaryonAsym/H1ChargedSidis_HighQ2/output_v6/studies/esigma_final_2026-10-24/crad/tables/djangoh14/crad_v3_xfgen_lt0_empz_gt45_nominal_490rows.csv
+%     sha256: 42a388da5f5d0e94c625d42e732bbaf375977842112c3184ea0db2173b97a0be   rows: 490
+%   /data/dust/group/h1/klesthen/BaryonAsym/sidis_highQ2/data/tables/highQ2_z005_s2prime_born_public_2026-10-11/numbers_noZ.csv
+%     sha256: f5d7a56ea12f3841cf7e4cfb4a2ef745721f4a3de940a6f52bda231e87ceec1f   rows: 490
+%   /data/dust/group/h1/klesthen/BaryonAsym/sidis_highQ2/data/tables/highQ2_z005_s2prime_born_public_2026-10-11/numbers_withZ.csv
+%     sha256: 7d1eb0189d11c30ab14e36d9704724dfbad8350866f4a38d22c3554891cb49e9   rows: 490
+%   /data/dust/group/h1/klesthen/BaryonAsym/H1ChargedSidis_HighQ2/output_v6/studies/esigma_final_2026-10-24/closure_rev3b_staging/s8/table_inputs/born/ibu/cross_sections.csv
+%     sha256: f45bc6bab03857ba69fea4236d07faa8406aa1a277d5b4b36230636d99281ddc   rows: 490
+%   /data/dust/group/h1/klesthen/BaryonAsym/H1ChargedSidis_HighQ2/output_v6/studies/esigma_final_2026-10-24/closure_rev3b_staging/s8/table_inputs/raw/ibu/cross_sections.csv
+%     sha256: b533678ae0c7abc05826f41e281c8d16e487d306ed1663634957317f961feb55   rows: 490
+%   table_config_esigmaphotonxf_public_2026-10-27b.json
+%     sha256: 045422e200338398ce644d02e798c52140eea2c6b87b1d737b137491ebdd6949
+%   table_config_esigmaphotonxf_2026-10-27b.json (base config of the profile chain)
+%     sha256: 1e448e83497e479c3f209cbf6865d65f57ebac12835270ded223de9b049016b7
+%   /data/dust/group/h1/klesthen/BaryonAsym/sidis_highQ2/scripts/tables/latex_cross_section_tables_2026-10-09/table_config.json (base config of the profile chain)
+%     sha256: 11651da733fe9a8af1b2cb9bad1e48516ad7e993c5d66a2ef010e0763529825d
+%% Validation: all gates PASS at generation time; see validation.json next to this file.
+%% ==========================================================================
+
+\begin{table}[htbp]
+\centering
+\caption{Cross sections for inclusive production of negatively charged hadrons ($h^-$) in deep-inelastic scattering, for the kinematic region $300.0 < Q^2 < 700.0$~GeV$^2$ and $0.0042 \leq x < 0.016$, tabulated in bins of the hadron energy fraction $z$ and the hadron transverse momentum $p_{T,h}$. The selection requires $Q^2 > 150$~GeV$^2$; only hadrons within the central tracking region, $|\eta_h| < 1.6$, are included. Each entry is the cross section in nb integrated over the corresponding four-dimensional bin; the bin volume is given in the last column of the table. The bin-averaged density (the cross section divided by the bin volume) is a derived quantity that is deliberately not tabulated, and model predictions must be integrated over the same bin volume before comparison with the tabulated values. The values are Born-level cross sections: they are corrected for detector effects and for radiative (QED and electroweak) effects; the correction convention is photon exchange only, i.e. the cross sections are defined without $Z$-boson exchange. Each cross section is quoted with its statistical uncertainty and its total systematic uncertainty. One correction factor, the applied photon-exchange-only radiative correction $C_{\gamma\mathrm{Born}}$, is tabulated with its uncertainty (sixth column). Dividing a tabulated cross section by the ratio $C_{\gamma\mathrm{Born}}/C_{\mathrm{rad}}$ of the same bin, with $C_{\mathrm{rad}}$ the corresponding factor of the convention with $Z$-boson exchange included, converts it to that convention. }
+\label{tab:sidis-crosssections-noZ-neg-S1x0}
+\setlength{\tabcolsep}{1pt}
+\begin{tabular}{rrrrrrr}
+\toprule
+$z$ range & \shortstack[r]{$p_{T,h}$ range\\(GeV)} & $\sigma$ (nb) & \shortstack[r]{stat.\ unc.\\(nb)} & \shortstack[r]{syst.\ unc.\\(nb)} & $C_{\gamma\mathrm{Born}}$ & \shortstack[r]{$\Delta V$\\(GeV$^3$)} \\
+\midrule
+0.0--0.05 & 0.0--0.5 & 0.8424 & 0.0026 & 0.11 & 0.981$\pm$0.0018 & 0.118 \\
+0.0--0.05 & 0.5--1.0 & 0.2675 & 0.0014 & 0.016 & 0.982$\pm$0.0017 & 0.118 \\
+0.0--0.05 & 1.0--2.0 & 0.08682 & 0.00079 & 0.0052 & 0.982$\pm$0.0022 & 0.236 \\
+0.0--0.05 & 2.0--4.0 & 0.01918 & 0.00040 & 0.0011 & 0.98$\pm$0.0033 & 0.472 \\
+0.0--0.05 & 4.0--8.0 & 0.002364 & 0.00019 & 0.00018 & 0.981$\pm$0.0079 & 0.944 \\
+\addlinespace
+0.05--0.1 & 0.0--0.5 & 0.09251 & 0.00078 & 0.0062 & 0.978$\pm$0.002 & 0.118 \\
+0.05--0.1 & 0.5--1.0 & 0.06709 & 0.00071 & 0.0035 & 0.979$\pm$0.0021 & 0.118 \\
+0.05--0.1 & 1.0--2.0 & 0.03795 & 0.00051 & 0.0022 & 0.982$\pm$0.0026 & 0.236 \\
+0.05--0.1 & 2.0--4.0 & 0.01529 & 0.00030 & 0.00079 & 0.977$\pm$0.0042 & 0.472 \\
+0.05--0.1 & 4.0--8.0 & 0.003148 & 0.00014 & 0.00017 & 0.98$\pm$0.0077 & 0.944 \\
+\addlinespace
+0.1--0.2 & 0.0--0.5 & 0.04691 & 0.00054 & 0.0029 & 0.983$\pm$0.0026 & 0.236 \\
+0.1--0.2 & 0.5--1.0 & 0.04892 & 0.00057 & 0.0022 & 0.979$\pm$0.0024 & 0.236 \\
+0.1--0.2 & 1.0--2.0 & 0.03402 & 0.00049 & 0.0017 & 0.982$\pm$0.0026 & 0.472 \\
+0.1--0.2 & 2.0--4.0 & 0.01555 & 0.00032 & 0.00086 & 0.984$\pm$0.0033 & 0.944 \\
+0.1--0.2 & 4.0--8.0 & 0.00425 & 0.00016 & 0.00022 & 0.981$\pm$0.005 & 1.888 \\
+\addlinespace
+0.2--0.3 & 0.0--0.5 & 0.01064 & 0.00027 & 0.00071 & 0.982$\pm$0.0043 & 0.236 \\
+0.2--0.3 & 0.5--1.0 & 0.01508 & 0.00030 & 0.00085 & 0.983$\pm$0.0036 & 0.236 \\
+0.2--0.3 & 1.0--2.0 & 0.01418 & 0.00032 & 0.00059 & 0.976$\pm$0.0032 & 0.472 \\
+0.2--0.3 & 2.0--4.0 & 0.00734 & 0.00024 & 0.00039 & 0.975$\pm$0.0036 & 0.944 \\
+0.2--0.3 & 4.0--8.0 & 0.002327 & 0.00012 & 0.00019 & 0.971$\pm$0.0057 & 1.888 \\
+\addlinespace
+0.3--0.5 & 0.0--0.5 & 0.00441 & 0.00016 & 0.00034 & 0.986$\pm$0.0058 & 0.472 \\
+0.3--0.5 & 0.5--1.0 & 0.00751 & 0.00020 & 0.00047 & 0.979$\pm$0.0053 & 0.472 \\
+0.3--0.5 & 1.0--2.0 & 0.009299 & 0.00024 & 0.00048 & 0.968$\pm$0.0048 & 0.944 \\
+0.3--0.5 & 2.0--4.0 & 0.005833 & 0.00020 & 0.00025 & 0.972$\pm$0.0051 & 1.888 \\
+0.3--0.5 & 4.0--8.0 & 0.002113 & 0.00013 & 0.00016 & 0.982$\pm$0.0072 & 3.776 \\
+\addlinespace
+0.5--0.7 & 0.0--0.5 & 0.0004925 & $4.4{\times}10^{-5}$ & $9.2{\times}10^{-5}$ & 0.993$\pm$0.013 & 0.472 \\
+0.5--0.7 & 0.5--1.0 & 0.001097 & $6.4{\times}10^{-5}$ & 0.00011 & 0.967$\pm$0.0096 & 0.472 \\
+0.5--0.7 & 1.0--2.0 & 0.001868 & 0.00010 & 0.00016 & 0.972$\pm$0.0091 & 0.944 \\
+0.5--0.7 & 2.0--4.0 & 0.001425 & 0.00010 & $7.6{\times}10^{-5}$ & 0.984$\pm$0.011 & 1.888 \\
+0.5--0.7 & 4.0--8.0 & 0.0004676 & $5.6{\times}10^{-5}$ & $5.7{\times}10^{-5}$ & 0.955$\pm$0.013 & 3.776 \\
+\addlinespace
+0.7--1.0 & 0.0--0.5 & $8.443{\times}10^{-5}$ & $1.5{\times}10^{-5}$ & $1.7{\times}10^{-5}$ & 0.979$\pm$0.029 & 0.708 \\
+0.7--1.0 & 0.5--1.0 & 0.0001987 & $2.4{\times}10^{-5}$ & $3.1{\times}10^{-5}$ & 0.964$\pm$0.022 & 0.708 \\
+0.7--1.0 & 1.0--2.0 & 0.0003688 & $4.2{\times}10^{-5}$ & $5.5{\times}10^{-5}$ & 0.974$\pm$0.021 & 1.416 \\
+0.7--1.0 & 2.0--4.0 & 0.0003295 & $5.0{\times}10^{-5}$ & $3.8{\times}10^{-5}$ & 0.974$\pm$0.027 & 2.832 \\
+0.7--1.0 & 4.0--8.0 & 0.0001562 & $3.4{\times}10^{-5}$ & $3.8{\times}10^{-5}$ & 0.907$\pm$0.037 & 5.664 \\
+\bottomrule
+\end{tabular}
+\end{table}
